@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -131,6 +132,21 @@
                                 <rect key="frame" x="346" y="734" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </colorWell>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ct-ML-wWT">
+                                <rect key="frame" x="0.0" y="675" width="111" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="小餅乾介紹"/>
+                                <connections>
+                                    <segue destination="Bii-EE-24W" kind="show" id="Rj9-7X-avt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6b7-ey-o8L">
+                                <rect key="frame" x="0.0" y="706" width="111" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="小餅乾抽獎"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.98228722810745239" blue="0.9836927056312561" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -139,11 +155,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113.74045801526717" y="-28.87323943661972"/>
+            <point key="canvasLocation" x="147" y="-80"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Bnq-fo-NIe">
+            <objects>
+                <viewController id="Bii-EE-24W" customClass="ViewController" customModule="UIStoryboardPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="737-p6-YSG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hw2_bg" translatesAutoresizingMaskIntoConstraints="NO" id="dNa-xa-6cL">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7aG-tI-Rq3">
+                                <rect key="frame" x="0.0" y="92" width="390" height="326"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Dho-bT-B4M">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="326"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cookie" translatesAutoresizingMaskIntoConstraints="NO" id="HfY-nA-B3N">
+                                            <rect key="frame" x="8" y="82" width="98" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51T-T1-ple">
+                                            <rect key="frame" x="137" y="15" width="218" height="125"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <string key="text">品名：巧克餅 內容物成份：砂糖，粗玉米粉(非基因改造)，植物油脂(大豆)，人造奶油，可可粉，加糖煉乳，食鹽，奶油(乳製品)，乳糖，可可塊，全脂奶粉，海藻糖，蛋白加水分解物(大豆)，奶油粉末，卵殼鈣，食用色素(焦糖)，香料，乳化劑(大豆卵磷脂).(原材料一部分由小麥，大豆提煉)</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <size key="shadowOffset" width="0.0" height="-9"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="KTO-ak-n3W">
+                                            <rect key="frame" x="137" y="162" width="224" height="123"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <mutableString key="text">Product Name: Chocolate Cookie Contents ingredients: sugar, grits (non-GMO), vegetable fats (soybeans), margarine, cocoa powder, sweetened condensed milk, salt, butter (dairy products), lactose, cocoa mass, whole milk powder, trehalose, Protein hydrolyzate (soybean), cream powder, eggshell calcium, food coloring (caramel), flavor, emulsifier (soy lecithin). (Part of the raw material is extracted from wheat and soybean)</mutableString>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" name="AccentColor"/>
+                                            <size key="shadowOffset" width="10" height="6"/>
+                                            <string key="userLabel">Product Name: Chocolate Cookie Contents ingredients: sugar, grits (non-GMO), vegetable fats (soybeans), margarine, cocoa powder, sweetened condensed milk, salt, butter (dairy products), lactose, cocoa mass, whole milk powder, trehalose, Protein hydrolyzate (soybean), cream powder, eggshell calcium, food coloring (caramel), flavor, emulsifier (soy lecithin). (Part of the raw material is extracted from wheat and soybean)</string>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qzG-eL-IiK"/>
+                        <color key="backgroundColor" red="1" green="0.98228722810000002" blue="0.98369270559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemMintColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CnP-GS-Rhq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgT-zr-0cj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965.64885496183206" y="-65.492957746478879"/>
         </scene>
     </scenes>
     <resources>
+        <image name="cookie" width="198" height="294"/>
         <image name="hw2_bg" width="564" height="1002"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
